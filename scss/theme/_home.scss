@@ -596,8 +596,9 @@
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	@media only screen and (max-width: 450px) {
-		background-attachment: scroll;
+	@media only screen and (max-width: 600px) {
+        background-attachment: scroll;
+        width:100%;
 	}
 }
 //--------- start footer Area -------------//
