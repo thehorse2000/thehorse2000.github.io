@@ -1800,7 +1800,7 @@ body {
   position: relative;
 }
 
-nav {
+nav, #contact-header {
   margin-right: 70px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -1809,7 +1809,7 @@ nav {
   transform-origin: 100% 50%;
 }
 @media (max-width: 767px) {
-  nav {
+  nav, #contact-header {
     margin-right: 0;
     position: absolute;
     right: 0;
@@ -1819,17 +1819,17 @@ nav {
     z-index: 5;
     background: #fff;
   }
-  nav a {
+  nav a, #contact-header a {
     color: #0bb5cc !important;
   }
-  nav a:hover {
+  nav a:hover, #contact-header a:hover {
     color: #0bb5cc;
   }
 }
-nav.hide {
+nav.hide, #contact-header.hide {
   transform: scale(0);
 }
-nav a {
+nav a, #contact-header a {
   color: #000;
   font-size: 12px;
   font-weight: 500;
@@ -1838,11 +1838,11 @@ nav a {
   display: inline-block;
 }
 @media (max-width: 767px) {
-  nav a {
+  nav a, #contact-header a {
     margin: 5px 25px;
   }
 }
-nav a:hover {
+nav a:hover, #contact-header a:hover {
   color: #0bb5cc;
 }
 
