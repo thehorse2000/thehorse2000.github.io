@@ -24,7 +24,7 @@ $(document).ready(function(){
 
   $(".menu-bar").on('click', function(e){
       e.preventDefault();
-      $("nav").toggleClass('hide');
+      $("#normal-header").toggleClass('hide');
       $("span", this).toggleClass("lnr-menu lnr-cross");
       $(".main-menu").addClass('mobile-menu');
   });
@@ -75,10 +75,7 @@ $(document).ready(function(){
 
     //  Counter Js 
 
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
+
 
     
 

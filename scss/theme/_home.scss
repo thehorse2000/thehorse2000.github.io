@@ -1,5 +1,5 @@
 .section-gap {
-	padding: 120px 0;
+	padding: 80px 0;
 }
 .section-title {
 	padding-bottom: 30px;
@@ -158,9 +158,9 @@
 
 .default-header{
 	background-color:#fff;
-	padding:20px 0;
+	padding:7px 0;
 	width: 100% !important;
-	box-shadow: -21.213px 21.213px 30px 0px rgba(158,158,158,0.3);	
+	box-shadow: -1.213px 1.213px 10px 0px rgba(158, 158, 158, 0.3) !important;
 }
 
 .sticky-wrapper{
@@ -169,12 +169,7 @@
 
 .banner-area {
 	background-color:$offwhite;	
-	.fullscreen {
-		height:850px !important;
-		@media(max-width:768px){
-			height: 800px !important;
-		}		
-	}
+
 }
 .banner-content {
 	@include media-breakpoint-down(md) {
@@ -183,7 +178,7 @@
 	}
 	h1 {
 		@extend .p1-gradient-color;
-		font-size: 58px;
+		font-size: 48px;
 		font-weight: 700;
 		line-height: 1.15em;
 		margin-bottom:20px;	
@@ -244,23 +239,39 @@
 
 .feature-area{
 
+  .header-text{
+    text-align:center;
+    h1{
+
+    }
+  }
 }
 
 .single-feature{
+	text-align: center;
+	padding:30px;
+	border:1px solid #dedede;
+	transition: 0.4s;
+	height:380px;
+	margin-bottom:20px;
 	.icon{
-		margin-right:20px;
-		.lnr{
-			font-size:40px;
-			font-weight:300;
-		}
+		width:100%;
+		display: block;
+		text-align:center;
+		padding:15px;
 	}
 	h4{
 		font-size:18px;
 		font-weight:600;
 		margin-bottom:12px;
+		color:$faint-black !important;
 	}
 }
+.single-feature:hover {
+	background-color: #dee2e6;
+	transition: 0.4s;
 
+}
 
 
 //--------- End callto Area -------------//
@@ -270,9 +281,11 @@
 
 
 .about-area{
-	background-color:#222;
+	background-color:$secondary-color;
 }
-
+#photosession{
+	background-color: $dark-blue;
+}
 
 
 
@@ -291,17 +304,17 @@
 
 	h1{
 		color:$white;
-		margin-bottom:45px;
-		@media(max-width:1280px) and (min-width: 988px){
-			br{
-				display:none;
-			}
-			font-size: 20px;
-			margin-bottom: -8px;
-			text-align: center;
-		}
-	}
+        font-size:36px;
 
+	}
+    .sub-title{
+      margin-top:0px;
+      padding-top:0px;
+      font-style: italic;
+		font-weight: bold;
+      font-size:15px;
+		color:white;
+    }
 	.form-control{
 		border-radius:0;
 		background-color:transparent;
@@ -354,7 +367,7 @@
 		.header-text{
 			text-align:center;
 			h1{
-				margin-bottom:25px;
+
 			}
 		}
 	}
@@ -548,6 +561,45 @@
 
 //--------- end blog Area -------------//
 
+//----- REVIEWS AREA START ---------//
+#carouselTeam .carousel-indicators li {
+	background-color:$primary-color;
+
+}
+#carouselReviews .carousel-indicators li {
+	background-color:$primary-color;
+
+}
+#carouselReviews img{
+	border-left:3px solid $primary-color;
+}
+.carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li {
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+}
+
+//---- START FOOTER BANNER ---- ///
+
+.parallax {
+	/* The image used */
+	background-image: url("../img/footer-image.jpg");
+
+	/* Set a specific height */
+	height: 350px;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@media only screen and (max-width: 450px) {
+		background-attachment: scroll;
+	}
+}
 //--------- start footer Area -------------//
 
 	.footer-area{
@@ -613,10 +665,11 @@
 		}
 
 		@include media-breakpoint-down(lg) {
-			margin-top:30px;
+
 		}
 		@include media-breakpoint-down(md) {
-			text-align:left;
+			margin-top:35px;
+			text-align:center;
 		}
 	}
 
@@ -726,6 +779,26 @@
 //--------- end footer Area -------------//
 
 
+//------ singles -------- //
 
+.section-main-title{
+	//border-bottom: $red-color solid 1px;
+	//border-width:3px;
+	//
+	//margin-bottom:15px;
+	//
+	//width: auto;
+	//padding-bottom: 15px;
+	color:$primary-color;
 
+}
 
+.text-secondary-red{
+	color:$red-color !important;
+}
+.text-faint-black{
+	color:$faint-black !important;
+}
+.text-dark-blue{
+	color:$dark-blue !important;
+}

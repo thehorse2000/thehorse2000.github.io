@@ -2,13 +2,45 @@ body {
 	position: relative;
 	
 }
+#contact-header{
+	background-color:#dedede;
+	padding:10px;
+	width:100%;
+}
+#header-contact .contact-link a , #header-contact .contact-link a i {
+	color:$faint-black;
+	font-size:12px;
+	animation: 0.4s;
+}
+#header-contact .contact-link a:hover{
+	color:black;
+	i{
+		color:black;
+	}
+	animation-delay: 0.4s;
+}
+#header-socials .contact-link a i{
+	color:$faint-black;
+	font-size:20px;
+}
+#header-socials .contact-link a:hover{
+	//transform:scale(1.15);
+	//animation-duration: 0.2s;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: jello;
+	animation-name: jello;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+
+}
 .default-header {
-	padding: 5px 0;
-	position: absolute;
-	top: 0;
-	left: 0;
+	padding: 2px 0;
+	position: relative;
 	width: 100%;
-	z-index: 9;
+	z-index: 90;
 }
 .menu-bar {
 	cursor: pointer;
@@ -28,7 +60,7 @@ nav {
 		right: 0;
 		top: 47px;
 		text-align: right;
-		padding: 20px 0;
+		padding: 7px 0;
 		z-index: 5;
 		background: $white;
 		a{
